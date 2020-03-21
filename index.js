@@ -1,4 +1,7 @@
+
 alert("This is created by Kulendu,Press OK to continue");
+var yourName=prompt("enter your name :");
+
 var numberOfDrumButtons=document.querySelectorAll(".drum").length;
 
 // Detecting the button press 
@@ -68,3 +71,9 @@ function buttonAnimation(currentKey){
         activeButton.classList.remove("pressed");
     },100);
 }
+
+// adding the variable welcome name to the site 
+$(".name").text(function(){
+    $(".name").text("hey ! "+yourName+" enjoy your music");
+    $(".name").css("font-size","2rem");
+});
